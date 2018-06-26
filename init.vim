@@ -25,13 +25,18 @@ set autoindent
 set hidden
 set number
 "set relativenumber
+set tabstop=2
 set shiftwidth=2
 set softtabstop=2
-set tabstop=2
+set expandtab
 set cursorline
-scriptencoding utf-8
-set encoding=utf-8
-set termencoding=utf-8
+"scriptencoding utf-8
+"set encoding=utf-8
+"set termencoding=utf-8
+set fileencoding=utf-8
+set wildmode=longest,list     " Completa o comando com TAB igual o bash
+
+filetype plugin indent on
 
 let mapleader="\<space>"
 nnoremap <leader>ev :vsplit ~/.config/nvim/init.vim<cr>
@@ -42,5 +47,4 @@ let g:UltiSnipsEditSplit = 'vertical'
 let g:UltiSnipsSnippetsDir = '~/.config/nvim/UltiSnips'
 let g:gitgutter_terminal_reports_focus=0
 
-" Indent Line
 let g:indentLine_color_term = 239
